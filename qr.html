@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body class="bg-gradient-to-r from-sky-200 via-sky-100 to-sky-300 min-h-screen flex items-center justify-center">
+  <div class="max-w-4xl mx-auto bg-white p-8 mt-10 rounded-2xl shadow-lg border-4 border-transparent bg-clip-padding bg-opacity-60 border-gradient-to-r from-sky-300 to-sky-500">
+    <!-- Heading Section -->
+    <div class="text-center">
+      <h1 class="text-4xl font-extrabold text-blue-900">🚀 LaunchPad by Cloud247.ai 🚀</h1>
+      <h2 class="text-2xl font-semibold mt-4 text-gray-800">Free 2-Day Workshop on Web Development, Cloud, and DevOps</h2>
+    </div>
+
+    <!-- Description -->
+    <div class="mt-6 text-gray-700">
+      <p class="text-lg">
+        🌟 Join us for an exciting 2-day workshop where you will gain hands-on experience with the latest technologies! 🌟
+      </p>
+      <p class="mt-4">
+        <strong>📅 Day 1:</strong> Learn how to build a stunning, responsive web application using HTML, CSS, and Tailwind CSS.<br>
+        <strong>☁️ Day 2:</strong> Deploy your application live with Cloud & DevOps tools!
+      </p>
+      <p class="mt-4 text-lg font-bold text-gray-800">
+        Register by <span class="text-red-600">8th October 2024</span>!<br>
+        📅 Workshop Dates: <span class="text-blue-700">10th and 11th October 2024</span>.
+      </p>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="flex justify-center mt-8">
+      <div id="qrcode" class="p-4 border-2 border-sky-500 rounded-lg bg-white shadow-lg"></div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-8">
+      <a href="https://forms.gle/nrqLhMNHaC66XUDWA" target="_blank" class="bg-gradient-to-r from-sky-400 to-sky-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gradient-to-l">
+        🎓 Register Now 🎓
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-6 text-center text-sm text-gray-600">
+      <p>Have questions? Contact us at <span class="text-blue-800 font-semibold">+91 63024 59865</span> 📞</p>
+    </div>
+  </div>
+
+  <!-- Script to Generate QR Code -->
+  <script>
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "https://forms.gle/nrqLhMNHaC66XUDWA",
+      width: 150,
+      height: 150
+    });
+  </script>
+</body>
+</html>
